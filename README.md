@@ -2,4 +2,5 @@
 Content:  
   - Summary  
   - Thesis  
-  - Intermediate Files  
+  - Code & Data
+  - Results
