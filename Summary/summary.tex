@@ -9,8 +9,9 @@
 \usepackage[labelfont=bf,textfont=bf]{caption}
 \usepackage{amsmath}
 \usepackage{amsfonts}
+\usepackage{ulem}
 
-\newcommand{\artauthor}{陈晟祺，周聿浩，陈智康}
+\newcommand{\artauthor}{陈晟祺；周聿浩；陈智康}
 \newcommand{\arttitle}{2017年全国大学生数学建模竞赛参赛总结}
 \newcommand{\artsubject}{}
 \newcommand{\artkeywords}{}
@@ -19,7 +20,7 @@
 			pdftitle=\arttitle,
 			pdfsubject=\artsubject,
 			pdfkeywords=\artkeywords,
-			pdfcopyright={Copyright Shengqi Chen, Yuhao Zhou, Zhikang Chen 2018. All rights reserved.},
+			pdfcopyright={Copyright Shengqi Chen, Yuhao Zhou, and Zhikang Chen 2018. All rights reserved.},
 			pdfdate=\today,
 			pdfdisplaydoctitle=true,
 			pdflang=zh-CN,
@@ -44,6 +45,35 @@
 \date{}
 \maketitle
 
-Hello World.
+\section{简单回顾}
+2017年9月，我们三个人参加了全国大学生数学建模竞赛（以下简称“国赛”），获得了全国一等奖。事实上作为没有任何数学建模经验的新手队，我们对最终这么好的成绩都颇感惊讶。下面分享一些关于比赛的拙见，希望对将来同学们参与建模竞赛有些帮助。
 
-\end{document}
+\section{题目选择}
+%如何选题（其他都不会？）
+
+\section{比赛进程}
+%关于时间的分配，简要说一下我们的进程
+
+\section{论文排版}
+在排版上，我们首先推荐使用\LaTeX{}，它在处理数学公式上具有巨大的优势。作为计算机系的学生，我们三个人之前都有使用\LaTeX{}排版的经验，所以没有太高的学习成本。对于新手来说，学习曲线还是比较陡峭的，因此推荐事先进行一些摸索和学习，尤其是图表、浮动体的处理等比较棘手的部分。目前\TeX{} Live在全平台上都很成熟易用，也有现成的模板，避免对格式不必要的纠结。在这里推荐一些在线资源：
+
+\begin{itemize}
+  \item 全国大学生数学建模竞赛\LaTeX{}模板：\url{https://github.com/latexstudio/CUMCMThesis}
+  \item MCM/ICM Thesis Template：\url{https://github.com/Liam0205/mcmthesis}
+  \item 一份其实很短的\LaTeX{}入门文档：\url{https://liam0205.me/2014/09/08/latex-introduction/}
+  \item \LaTeX{} 笔记第二版v2.03：\url{http://maths.nju.edu.cn/~meijq/tex/lnotes2.pdf}
+  \item \LaTeX{} 科技排版工作室：\url{http://www.latexstudio.net/}
+  \item China\TeX{}：\url{http://www.chinatex.org/}
+\end{itemize}
+
+如果时间仓促或者实在不适应\LaTeX{}，Word依旧是一个可行的选择。但请一定认真学习并正确使用Word的各项高级功能，如交叉引用、目录生成、样式等，有助于用撰写出专业、美观的论文，并减少在格式调整等细节上浪费的时间。
+
+\section{辅助软件}
+虽然MATLAB基本占据了建模界的半壁江山，但我们三个人都从没有接触过，\sout{也懒得学}。所以我们主要采用了Python和Mathematica进行辅助运算，Python是主力，借助于 Jupyter Notebook 这一可视化神器以及 matplotlib、sklearn等专业的绘图、统计工具包，我们可以快速、直观地进行各种运算与尝试。而Mathematica用在代数表达式的推导和数值方程的求解上：A题有解析几何部分，符号运算量很大，多亏了这一套代数系统的帮助；我们的解题方法中涉及了数万个方程的联合求解，经过测试Python的scipy和numpy等库虽然使用方便，但是效率比较低，而Mathematica可以很快地求解。同时Mathematica的函数式编程语法也给表达和计算带来了很大的便利，也没有MATLAB的向量化那么反直觉。
+
+在此之外，强烈推荐使用 Git 进行版本控制，包括论文、代码与所有的中间文件。一方面这对多人协作解题、撰写论文带来了极大的便利（尤其是与\TeX{}这种纯文本格式结合时）；另一方面 ，所有的历史版本都会被记录下来，方便随时核查更改、回溯之前的思路，\sout{以及及时发现谁写错了然后扣锅}。
+
+\section{其他}
+%不知道写些啥
+
+\end{document} 
